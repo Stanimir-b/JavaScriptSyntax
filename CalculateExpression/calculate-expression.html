@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Calculate expression</title>
+	<script src="calculate-expression.js"></script>
+	<style type="text/css">
+		#wrapper{
+			width: 260px;px;
+			margin: 0px auto;
+
+		}
+		button{
+			display: block;
+			margin-top: 17px;
+			margin-left: 75px;
+			border-radius: none;
+			background-color: #fff;
+			border: 1px solid black;
+		}
+		input{
+			padding-left: 10px;
+		}
+		input,#output{
+			background-color: #234465;
+			width: 250px;
+			height: 30px;
+			color: #E29C05;
+			border: none;
+			margin-top: 13px;
+		}
+		p{
+			padding-top: 6px;
+			padding-left: 10px;
+		}
+	</style>
+</head>
+<body>
+  <div id="wrapper">
+	<input type="text" id="input" autofocus>
+	<button type="button" id="input" onclick="calculate(document.getElementById('input').value)">Eval result</button>
+	<div id="output">
+		<p id="result"></p>
+	</div>
+  </div>
+</body>
+</html>
